@@ -4,6 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ref, onMounted, nextTick } from 'vue'
 
 gsap.registerPlugin(ScrollTrigger)
+const videoRef = ref(null)
 
 onMounted(async () => {
   await nextTick()
@@ -19,8 +20,6 @@ onMounted(async () => {
     },
   })
 })
-
-const videoRef = ref(null)
 </script>
 
 <template>

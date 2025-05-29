@@ -6,7 +6,24 @@ import { onMounted } from 'vue'
 
 gsap.registerPlugin(ScrollTrigger)
 
-onMounted(() => {})
+onMounted(() => {
+  const items = document.querySelectorAll('.help-bg')
+  items.forEach((item) => {
+    gsap.from(item, {
+      y: 100,
+      opacity: 0,
+      duration: 1,
+      ease: 'power2.out',
+      scrollTrigger: {
+        trigger: item,
+        start: 'top 90%',
+        end: 'bottom 10%',
+        toggleActions: 'play reverse play reverse',
+        // markers: true,
+      },
+    })
+  })
+})
 </script>
 
 <template>
@@ -22,6 +39,10 @@ onMounted(() => {})
             <p class="help-title">{{ title }}</p>
           </div>
         </div>
+      </div>
+      <div class="apply-help">
+        apply for help
+        <img src="../assets/images/arrow.png" alt="arrow" />
       </div>
     </div>
   </section>

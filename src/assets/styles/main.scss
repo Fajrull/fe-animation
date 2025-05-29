@@ -229,7 +229,7 @@
   background-color: $yellow;
   padding-inline: 10%;
   margin-inline: auto;
-  padding-block: 5vh;
+  padding-block: 10vh;
 }
 
 .section4 .container4 h2 {
@@ -255,7 +255,7 @@
 .help-wrap {
   margin-block: 5vh;
   display: grid;
-  gap: 1rem;
+  gap: 3rem;
   grid-template-columns: repeat(3, 1fr);
   @media screen and (max-width: 1200px) {
     grid-template-columns: repeat(2, 1fr);
@@ -293,4 +293,22 @@
   @media screen and (max-width: 780px) {
     font-size: 4vw;
   }
+}
+
+.apply-help {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5rem;
+  padding: 10px 16px;
+  border: 3px solid $black;
+  background-color: $plum;
+  width: fit-content;
+}
+
+.apply-help img {
+  width: auto;
+  height: 2vw;
+  transform: rotate(180deg);
+  margin-left: 1rem;
 }
