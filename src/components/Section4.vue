@@ -24,7 +24,6 @@ onMounted(() => {
     })
   })
 
-  // Animasi untuk apply-help
   const applyHelp = document.querySelector('.apply-help')
   gsap.from(applyHelp, {
     x: -100,
