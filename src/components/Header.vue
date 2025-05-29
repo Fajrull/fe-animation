@@ -46,6 +46,12 @@ onMounted(() => {
       <div>
         <button class="header-button">donate</button>
       </div>
+      <div>
+        <button class="header-webflow">
+          <img src="../assets/images/webflow.svg" alt="" />
+          Made in Webflow
+        </button>
+      </div>
       <div class="header-content">
         <div class="hero-container">
           <img ref="hero1" src="../assets/images/hero.svg" alt="hero" class="hero hero1" />

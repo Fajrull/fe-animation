@@ -30,6 +30,24 @@
   padding: 0.25em 0.5em;
   font-size: clamp(1rem, 2vw, 2rem);
   z-index: 1;
+  background-color: $white;
+}
+
+.header-webflow {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 1rem;
+  cursor: pointer;
+  border: 0.1em solid $black;
+  padding: 3px;
+  font-size: 16px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: $white;
+  font-weight: 600;
 }
 
 .header-container {
