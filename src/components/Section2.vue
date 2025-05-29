@@ -15,7 +15,8 @@ onMounted(async () => {
     ease: 'power2.out',
     scrollTrigger: {
       trigger: videoRef.value,
-      start: 'top 100%',
+      start: 'top 80%',
+      end: 'bottom 20%',
       toggleActions: 'play reverse play reverse',
     },
   })

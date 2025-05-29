@@ -95,6 +95,11 @@
 .social-icon {
   width: clamp(2rem, 5vw, 3rem);
   height: auto;
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: scale(0.6);
+    cursor: pointer;
+  }
   @media screen and (max-width: 480px) {
     width: clamp(1.5rem, 4vw, 2rem);
   }
@@ -113,7 +118,8 @@
   font-weight: 700;
   line-height: 1.25em;
   @media screen and (max-width: 480px) {
-    font-size: 5vw;
+    font-size: 7vw;
+    margin-bottom: 1rem;
   }
 }
 
@@ -172,7 +178,8 @@
   line-height: 1.25em;
   color: $white;
   @media screen and (max-width: 480px) {
-    font-size: 5vw;
+    font-size: 7vw;
+    margin-bottom: 1rem;
   }
 }
 
@@ -250,7 +257,8 @@
   line-height: 1.25em;
   margin-bottom: 2rem;
   @media screen and (max-width: 480px) {
-    font-size: 5vw;
+    font-size: 7vw;
+    margin-bottom: 1rem;
   }
 }
 
@@ -340,7 +348,8 @@
   line-height: 1.25em;
   margin-bottom: 2rem;
   @media screen and (max-width: 480px) {
-    font-size: 5vw;
+    font-size: 7vw;
+    margin-bottom: 1rem;
   }
 }
 
@@ -390,7 +399,6 @@
   border: 0.1em solid $black;
   height: 100%;
   padding: 1rem;
-
   transition: transform 0.3s ease;
   &:hover {
     transform: scale(0.9);
@@ -418,7 +426,8 @@
   line-height: 1.25em;
   margin-bottom: 2rem;
   @media screen and (max-width: 480px) {
-    font-size: 5vw;
+    font-size: 7vw;
+    margin-bottom: 1rem;
   }
 }
 
@@ -488,7 +497,7 @@
   background-color: $white;
   padding-inline: 10%;
   margin-inline: auto;
-  padding-block: 10vh;
+  padding-block: 20vh;
 }
 
 .section7 .container7 h2 {
@@ -497,7 +506,8 @@
   line-height: 1.25em;
   margin-bottom: 2rem;
   @media screen and (max-width: 480px) {
-    font-size: 5vw;
+    font-size: 7vw;
+    margin-bottom: 1rem;
   }
 }
 
@@ -532,4 +542,67 @@
   height: 100%;
   object-fit: contain;
   filter: grayscale(100%);
+}
+
+//footer styles
+footer {
+  background-color: $green;
+  padding-inline: 10%;
+  margin-inline: auto;
+  padding-block: 20vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  @media screen and (max-width: 480px) {
+    padding-block: 5vh;
+  }
+}
+
+.footer-socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-icon {
+  width: clamp(2rem, 5vw, 3rem);
+  height: auto;
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: scale(0.6);
+    cursor: pointer;
+  }
+  @media screen and (max-width: 480px) {
+    width: clamp(1.5rem, 4vw, 2rem);
+  }
+}
+
+.footer-left,
+.footer-right {
+  width: 48%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.footer-left h2 {
+  font-size: 4vw;
+  font-weight: 700;
+  line-height: 1.25em;
+  @media screen and (max-width: 480px) {
+    font-size: 7vw;
+    margin-bottom: 1rem;
+  }
+}
+
+.footer-left div {
+  font-size: 3vw;
+  line-height: 1.5em;
+  @media screen and (max-width: 780px) {
+    font-size: 3vw;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 4vw;
+  }
 }

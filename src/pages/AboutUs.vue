@@ -6,6 +6,7 @@ import Section4 from '@/components/Section4.vue'
 import Section5 from '@/components/Section5.vue'
 import Section6 from '@/components/Section6.vue'
 import Section7 from '@/components/Section7.vue'
+import FooterAboutUs from '../components/Footer.vue'
 </script>
 
 <template>
@@ -16,4 +17,5 @@ import Section7 from '@/components/Section7.vue'
   <Section5 />
   <Section6 />
   <Section7 />
+  <FooterAboutUs />
 </template>
