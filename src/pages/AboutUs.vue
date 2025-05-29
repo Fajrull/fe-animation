@@ -3,7 +3,8 @@ import HeaderAboutUs from '../components/Header.vue'
 import Section2 from '../components/Section2.vue'
 import Section3 from '@/components/Section3.vue'
 import Section4 from '@/components/Section4.vue'
-import Sectionn5 from '@/components/Sectionn5.vue'
+import Section5 from '@/components/Section5.vue'
+import Section6 from '@/components/Section6.vue'
 </script>
 
 <template>
@@ -11,5 +12,6 @@ import Sectionn5 from '@/components/Sectionn5.vue'
   <Section2 />
   <Section3 />
   <Section4 />
-  <Sectionn5 />
+  <Section5 />
+  <Section6 />
 </template>
