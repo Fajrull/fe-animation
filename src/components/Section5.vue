@@ -37,7 +37,7 @@ onMounted(async () => {
         <main v-for="(member, index) in teamMembers" :key="index" class="card-team">
           <div class="team-items">
             <div class="team-item">
-              <img :src="member.img" class="team-img" />
+              <img :src="member.img" class="team-img" loading="lazy" />
               <p style="margin-bottom: 1rem">{{ member.name }}</p>
               <p>{{ member.title }}</p>
             </div>

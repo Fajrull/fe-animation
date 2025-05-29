@@ -43,6 +43,9 @@ onMounted(() => {
 <template>
   <header class="header">
     <div class="header-container">
+      <div>
+        <button class="header-button">donate</button>
+      </div>
       <div class="header-content">
         <div class="hero-container">
           <img ref="hero1" src="../assets/images/hero.svg" alt="hero" class="hero hero1" />

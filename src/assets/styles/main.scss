@@ -6,6 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'DM Sans', sans-serif;
+  scroll-behavior: smooth;
 }
 
 .header {
@@ -17,6 +18,18 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
+}
+
+.header-button {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 2rem;
+  cursor: pointer;
+  border: 0.1em solid $black;
+  padding: 0.25em 0.5em;
+  font-size: clamp(1rem, 2vw, 2rem);
+  z-index: 1;
 }
 
 .header-container {

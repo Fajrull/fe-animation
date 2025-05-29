@@ -50,6 +50,7 @@ onMounted(async () => {
       </div>
       <div class="video" ref="videoRef">
         <iframe
+          loading="lazy"
           src="https://www.youtube.com/embed/5Wk1rp99B7o?start=12"
           title="YouTube video player"
           frameborder="0"

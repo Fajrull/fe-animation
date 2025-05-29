@@ -36,7 +36,7 @@ onMounted(async () => {
         <main v-for="(member, index) in supportUs" :key="index" class="support-team">
           <div class="support-items">
             <div class="support-item">
-              <img :src="member.img" class="support-img" />
+              <img :src="member.img" class="support-img" loading="lazy" />
               <p class="title">{{ member.name }}</p>
               <p class="subtitle">{{ member.title }}</p>
             </div>
