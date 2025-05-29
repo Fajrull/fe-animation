@@ -176,11 +176,23 @@
   }
 }
 
+.container3 p {
+  font-size: 2.5vw;
+  line-height: 1.5em;
+  color: $white;
+  @media screen and (max-width: 780px) {
+    font-size: 3vw;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 4vw;
+  }
+}
+
 .container3 div {
   font-size: 2.5vw;
   line-height: 1.5em;
   color: $white;
-
+  margin-top: 2rem;
   @media screen and (max-width: 780px) {
     font-size: 3vw;
   }
@@ -236,13 +248,14 @@
   font-size: 4vw;
   font-weight: 700;
   line-height: 1.25em;
+  margin-bottom: 2rem;
   @media screen and (max-width: 480px) {
     font-size: 5vw;
   }
 }
 
 .container4 div {
-  font-size: 2.5vw;
+  font-size: 3vw;
   line-height: 1.5em;
   @media screen and (max-width: 780px) {
     font-size: 3vw;
@@ -311,4 +324,81 @@
   height: 2vw;
   transform: rotate(180deg);
   margin-left: 1rem;
+}
+
+//Section5 Styles
+.section5 {
+  background-color: $white;
+  padding-inline: 10%;
+  margin-inline: auto;
+  padding-block: 10vh;
+}
+
+.section5 .container5 h2 {
+  font-size: 4vw;
+  font-weight: 700;
+  line-height: 1.25em;
+  margin-bottom: 2rem;
+  @media screen and (max-width: 480px) {
+    font-size: 5vw;
+  }
+}
+
+.container5 div {
+  font-size: 3vw;
+  line-height: 1.5em;
+  @media screen and (max-width: 780px) {
+    font-size: 3vw;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 4vw;
+  }
+}
+
+.container5 p {
+  font-size: 1.5vw;
+  line-height: 1.5em;
+  @media screen and (max-width: 780px) {
+    font-size: 3vw;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 4vw;
+  }
+}
+
+.team-wrap {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(4, 1fr);
+  @media screen and (max-width: 1200px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media screen and (max-width: 780px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (max-width: 480px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.team-items {
+  background-color: $yellow;
+  height: 100%;
+}
+
+.team-item {
+  border: 0.1em solid $black;
+  height: 100%;
+  padding: 1rem;
+
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+  }
+}
+
+.team-img {
+  width: 100%;
+  object-fit: cover;
 }

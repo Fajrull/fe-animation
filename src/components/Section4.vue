@@ -23,6 +23,21 @@ onMounted(() => {
       },
     })
   })
+
+  // Animasi untuk apply-help
+  const applyHelp = document.querySelector('.apply-help')
+  gsap.from(applyHelp, {
+    x: -100,
+    opacity: 0,
+    duration: 1,
+    ease: 'power2.out',
+    scrollTrigger: {
+      trigger: applyHelp,
+      start: 'top 80%',
+      end: 'bottom 20%',
+      toggleActions: 'play reverse play reverse',
+    },
+  })
 })
 </script>
 

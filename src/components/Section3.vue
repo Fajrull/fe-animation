@@ -44,30 +44,30 @@ onMounted(() => {
       <div class="project-wrap" ref="project1">
         <div class="project-item">
           <div class="project-title">Emergency Aid. WAR 2022.</div>
-          <div>
+          <p>
             providing food and medicine to the shelters and animals which lost their homes and
             families due to the war
-          </div>
+          </p>
         </div>
       </div>
 
       <div class="project-wrap2" ref="project2">
         <div class="project-item">
           <div class="project-title">Non-commercial feed line</div>
-          <div>
+          <p>
             construction of industrial production base where food for shelters will be produced on a
             free basis
-          </div>
+          </p>
         </div>
       </div>
 
       <div class="project-wrap3" ref="project3">
         <div class="project-item">
           <div class="project-title">Education and Control</div>
-          <div>
+          <p>
             lectures on communication, organisation and coordination of processes, control over the
             use of aid
-          </div>
+          </p>
         </div>
       </div>
     </div>
