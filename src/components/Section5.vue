@@ -2,11 +2,12 @@
 import { teamMembers } from '@/data/teamMembers'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { onMounted } from 'vue'
+import { nextTick, onMounted } from 'vue'
 
 gsap.registerPlugin(ScrollTrigger)
 
-onMounted(() => {
+onMounted(async () => {
+  await nextTick()
   const teams = document.querySelectorAll('.card-team')
   teams.forEach((team) => {
     gsap.from(team, {

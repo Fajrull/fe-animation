@@ -2,11 +2,12 @@
 import { supportUs } from '@/data/supportUs'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { onMounted } from 'vue'
+import { nextTick, onMounted } from 'vue'
 
 gsap.registerPlugin(ScrollTrigger)
 
-onMounted(() => {
+onMounted(async () => {
+  await nextTick()
   const teams = document.querySelectorAll('.support-team')
   teams.forEach((support) => {
     gsap.from(support, {
