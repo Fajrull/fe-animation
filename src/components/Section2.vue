@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger)
 onMounted(async () => {
   await nextTick()
   gsap.from(videoRef.value, {
-    y: 200,
+    y: 100,
     opacity: 0,
     duration: 1,
     ease: 'power2.out',
