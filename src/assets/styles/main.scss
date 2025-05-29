@@ -105,7 +105,7 @@
   background-color: $white;
   padding-inline: 10%;
   margin-inline: auto;
-  padding-block: 5vh;
+  padding-block: 10vh;
 }
 
 .container h2 {
@@ -163,26 +163,14 @@
   background-color: $blue;
   padding-inline: 10%;
   margin-inline: auto;
-  padding-block: 5vh;
-}
-
-.section3 .container3 {
-  font-size: 2.5vw;
-  line-height: 1.5em;
-  margin-top: 0.5em;
-  margin-bottom: 1em;
-  @media screen and (max-width: 780px) {
-    font-size: 3vw;
-  }
-  @media screen and (max-width: 480px) {
-    font-size: 4vw;
-  }
+  padding-block: 10vh;
 }
 
 .section3 .container3 h2 {
   font-size: 4vw;
   font-weight: 700;
   line-height: 1.25em;
+  color: $white;
   @media screen and (max-width: 480px) {
     font-size: 5vw;
   }
@@ -191,6 +179,8 @@
 .container3 div {
   font-size: 2.5vw;
   line-height: 1.5em;
+  color: $white;
+
   @media screen and (max-width: 780px) {
     font-size: 3vw;
   }
@@ -232,4 +222,65 @@
   font-weight: 700;
   line-height: 1.5em;
   padding-bottom: 1rem;
+}
+
+// Section4 Styles
+.section4 {
+  background-color: $yellow;
+  padding-inline: 10%;
+  margin-inline: auto;
+  padding-block: 5vh;
+}
+
+.section4 .container4 h2 {
+  font-size: 4vw;
+  font-weight: 700;
+  line-height: 1.25em;
+  @media screen and (max-width: 480px) {
+    font-size: 5vw;
+  }
+}
+
+.container4 div {
+  font-size: 2.5vw;
+  line-height: 1.5em;
+  @media screen and (max-width: 780px) {
+    font-size: 3vw;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 4vw;
+  }
+}
+
+.help-wrap {
+  margin-block: 5vh;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.help-bg {
+  background-color: $white;
+}
+
+.help-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 0.1em solid $black;
+  height: 100%;
+  padding-inline: 1rem;
+  padding-block: 2rem;
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: translate(20px, -10px);
+    cursor: pointer;
+  }
+}
+
+.help-title {
+  font-size: 1.5vw;
+  line-height: 1.5em;
+  padding-bottom: 1rem;
+  color: $black;
 }
