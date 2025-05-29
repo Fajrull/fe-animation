@@ -1,4 +1,27 @@
-<script setup></script>
+<script setup>
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { ref, onMounted, nextTick } from 'vue'
+
+gsap.registerPlugin(ScrollTrigger)
+
+onMounted(async () => {
+  await nextTick()
+  gsap.from(videoRef.value, {
+    y: 200,
+    opacity: 0,
+    duration: 1,
+    ease: 'power2.out',
+    scrollTrigger: {
+      trigger: videoRef.value,
+      start: 'top 100%',
+      toggleActions: 'play reverse play reverse',
+    },
+  })
+})
+
+const videoRef = ref(null)
+</script>
 
 <template>
   <section class="section2">
@@ -25,9 +48,8 @@
         Who else if not we should support our younger brothers, especially in difficult times? Let's
         be friends!
       </div>
-      <div>
+      <div class="video" ref="videoRef">
         <iframe
-          height="auto"
           src="https://www.youtube.com/embed/5Wk1rp99B7o?start=12"
           title="YouTube video player"
           frameborder="0"
